@@ -1,0 +1,108 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center; */
+    font-family: 'Rubik', sans-serif;
+    background-color: #EEF0F4;
+    color: #432000;
+    /*! Evita que el texto sea seleccionado por el usuario. (Tiene diferentes valores: auto, text, all) */
+    user-select: none;
+}
+
+
+.container {
+    border: 2px solid black;
+    border-radius: 7px;
+    display: flex;
+    flex-flow: column nowrap;
+    max-width: 335px;
+    margin: 25vh auto; 
+    padding: 25px;
+    gap: 10px;
+    height: fit-content;
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4); */
+    box-shadow: 0 20px 35px rgba(92, 99, 105, .4);
+}
+
+
+
+img {
+    width: 150px; /*Centrar la imagen en el eje x*/
+    margin: 0 auto;
+}
+
+input {
+    /* color: #432000; */
+    color: #AC485A;
+    font-weight: bolder;
+    background-color: #DCE1EB;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    outline: none;
+}
+
+input:focus {
+    border: 2px solid #AC485A;
+}
+
+::placeholder {
+    color: white;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #AC485A;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #432000;
+}
+
+ul {
+    list-style-type: none; /*Es lo mismo que poner list-style: none; en la etiqueta li*/
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap;
+    flex-direction: row; */
+    gap: 15px;
+}
+
+ul li {
+    background-color: #FFFDF8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    /* list-style: none; */
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #FFECC7;
+}
+
+.alert {
+    text-align: center;
+    width: 100%;
+    color: red;
+    font-weight: 700;
+    font-size: 30px;
+}
+
